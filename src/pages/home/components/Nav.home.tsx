@@ -3,13 +3,16 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 const NavHome = () => {
-  return (
-    <NavHomeStyled>
-        <NavLink to = '/'> Home </NavLink>
-        <NavLink to = '/about'> About </NavLink>
-        <NavLink to = '/contact'> Contact </NavLink>
-    </NavHomeStyled>
-  )
+    return (
+        <NavHomeStyled>
+            <div className="links">
+                <NavLink to = '/'> Home </NavLink>
+                <NavLink to = '/about'> Schedule </NavLink>
+                <NavLink to = '/contact'> Contact </NavLink>
+                <NavLink to ='/hours'> Hours </NavLink>
+            </div>
+        </NavHomeStyled>
+    )
 }
 
 export default NavHome
@@ -36,6 +39,20 @@ const NavHomeStyled = styled.div`
         text-decoration: none;
         font-family: ${pr => pr.theme.fonts.family.primary};
         font-size: ${pr => pr.theme.fonts.size.large};
+    }
+
+    a:hover {
+        color: ${pr => pr.theme.colors.primary};
+    }
+
+    .active {
+        color: ${pr => pr.theme.colors.primary};
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
     }
 
 `

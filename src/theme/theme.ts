@@ -1,6 +1,6 @@
 const theme: object = {
     colors: {
-        primary: '#0070f3',
+        primary: '#EB8704',
         secondary: '#ff0000',
     },
     fonts: {
