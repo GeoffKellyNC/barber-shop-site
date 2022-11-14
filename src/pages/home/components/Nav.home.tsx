@@ -19,15 +19,23 @@ const NavHomeStyled = styled.div`
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: black;
     width: 100%;
     display: flex;
+    gap: 3rem;
     justify-content: flex-end;
+    background: rgba( 24, 23, 23, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: none;
+    height: 100px;
 
     a {
         padding: 1rem;
         color: white;
         text-decoration: none;
+        font-family: ${pr => pr.theme.fonts.family.primary};
+        font-size: ${pr => pr.theme.fonts.size.large};
     }
 
 `
