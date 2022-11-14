@@ -11,6 +11,7 @@ const Home = (): JSX.Element => {
       <NavHome />
       <HeaderHome />
       <span> Home Page </span>
+      
     </HomeStyled>
   )
 }
