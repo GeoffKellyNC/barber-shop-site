@@ -16,7 +16,6 @@ const Home = () => {
       <HeaderHome />
       <AboutHome />
       <PricingHome />
-      
     </HomeStyled>
   )
 }
